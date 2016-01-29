@@ -1,0 +1,9 @@
+# HQReq
+
+## Installation
+
+Using npm:
+
+```bash
+$ npm install --save hqreq
+```

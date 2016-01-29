@@ -1,0 +1,11 @@
+{
+  "name": "hqreq",
+  "version": "0.0.2",
+  "description": "HTTP Request Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Viktor Pyskunov",
+  "license": "ISC"
+}
