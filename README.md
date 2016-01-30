@@ -38,7 +38,6 @@ var book = {
 };
 HttpRequest.post('/books', book)
   .then(function (response) {
-    // create new book
     // get successful response after creating new book
   })
   .catch(function () {
@@ -53,8 +52,7 @@ var book = {
 };
 HttpRequest.put('/books/123', book)
   .then(function (response) {
-    // update existing book
-    // get successful response
+    // get successful response after updating existing book
   })
   .catch(function () {
     // Handle error response
@@ -65,8 +63,7 @@ HttpRequest.put('/books/123', book)
 ```javascript
 HttpRequest.delete('/books/123')
   .then(function (response) {
-    // delete one book
-    // get successful response
+    // get successful response after deleting one book
   })
   .catch(function () {
     // Handle error response
@@ -80,8 +77,7 @@ var book = {
 };
 HttpRequest.patch('/books/123', book)
   .then(function (response) {
-    // update specific parts of the book
-    // get successful response
+    // get successful response after updating specific parts of the book
   })
   .catch(function () {
     // Handle error response
