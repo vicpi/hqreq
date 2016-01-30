@@ -1,4 +1,4 @@
-# HQReq
+# HQReq - Library for making AJAX requests
 
 ## Installation
 
@@ -74,29 +74,6 @@ HttpRequest.delete('/books/123')
   });
 ```
 
-#### trace
-```
-HttpRequest.trace('/books')
-  .then(function (response) {
-    // Get successful response
-  })
-  .catch(function () {
-    // Handle error response
-  });
-```
-
-#### options
-
-```javascript
-HttpRequest.options('/books')
-  .then(function (response) {
-    // Get successful response
-  })
-  .catch(function () {
-    // Handle error response
-  });
-```
-
 #### patch
 Update specific parts of the book.
 ```javascript
@@ -112,4 +89,35 @@ HttpRequest.patch('/books/123', book)
   });
 ```
 
+#### trace
+```javascript
+HttpRequest.trace('/books')
+  .then(function (response) {
+    // Get successful response
+  })
+  .catch(function () {
+    // Handle error response
+  });
+```
+
+#### options
+```javascript
+HttpRequest.options('/books')
+  .then(function (response) {
+    // Get successful response
+  })
+  .catch(function () {
+    // Handle error response
+  });
+```
+
 #### head
+```javascript
+HttpRequest.head('/books', book)
+  .then(function (response) {
+    // Get successful response
+  })
+  .catch(function () {
+    // Handle error response
+  });
+```
