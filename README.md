@@ -22,6 +22,20 @@ HttpRequest.get('/books')
 ```
 
 #### post
+Create new book.
+```javascript
+var book = {
+  // book fields go here
+};
+HttpRequest.post('/books', book)
+  .then(function (response) {
+    // Get successful response
+  })
+  .catch(function () {
+    // Handle error response
+  });
+```
+
 
 #### head
 
