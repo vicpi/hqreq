@@ -21,11 +21,10 @@ var HttpRequest = require('hqreq').HttpRequest;
 ```
 
 #### get
-Get list of books.
 ```javascript
 HttpRequest.get('/books')
   .then(function (response) {
-    // Get list of books in response
+    // get list of books in response
   })
   .catch(function () {
     // Handle error response
@@ -33,14 +32,14 @@ HttpRequest.get('/books')
 ```
 
 #### post
-Create new book.
 ```javascript
 var book = {
   // book fields go here
 };
 HttpRequest.post('/books', book)
   .then(function (response) {
-    // Get successful response
+    // create new book
+    // get successful response after creating new book
   })
   .catch(function () {
     // Handle error response
@@ -48,14 +47,14 @@ HttpRequest.post('/books', book)
 ```
 
 #### put
-Update existing book.
 ```javascript
 var book = {
   // book fields go here
 };
 HttpRequest.put('/books/123', book)
   .then(function (response) {
-    // Get successful response
+    // update existing book
+    // get successful response
   })
   .catch(function () {
     // Handle error response
@@ -63,11 +62,11 @@ HttpRequest.put('/books/123', book)
 ```
 
 #### delete
-Delete one book.
 ```javascript
 HttpRequest.delete('/books/123')
   .then(function (response) {
-    // Get successful response
+    // delete one book
+    // get successful response
   })
   .catch(function () {
     // Handle error response
@@ -75,14 +74,14 @@ HttpRequest.delete('/books/123')
 ```
 
 #### patch
-Update specific parts of the book.
 ```javascript
 var book = {
   // book fields go here
 };
 HttpRequest.patch('/books/123', book)
   .then(function (response) {
-    // Get successful response
+    // update specific parts of the book
+    // get successful response
   })
   .catch(function () {
     // Handle error response
@@ -93,7 +92,7 @@ HttpRequest.patch('/books/123', book)
 ```javascript
 HttpRequest.trace('/books')
   .then(function (response) {
-    // Get successful response
+    // get successful response
   })
   .catch(function () {
     // Handle error response
@@ -104,7 +103,7 @@ HttpRequest.trace('/books')
 ```javascript
 HttpRequest.options('/books')
   .then(function (response) {
-    // Get successful response
+    // get successful response
   })
   .catch(function () {
     // Handle error response
@@ -115,7 +114,7 @@ HttpRequest.options('/books')
 ```javascript
 HttpRequest.head('/books', book)
   .then(function (response) {
-    // Get successful response
+    // get successful response
   })
   .catch(function () {
     // Handle error response
