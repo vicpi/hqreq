@@ -8,29 +8,29 @@ Using npm:
 $ npm install --save hqreq
 ```
 
-# hreq - Library for making HTTP requests #
+## Usage
 
-## API ##
+#### get
+```javascript
+HttpRequest.get('/books')
+  .then(function (response) {
+    // Get list of books in response
+  })
+  .catch(function () {
+    // Handle error response
+  });
+```
 
-#### get ####
-    HttpRequest.get('/api/books')
-      .then(function (response) {
-        // Success
-      })
-      .catch(function () {
-        // Error
-      });
+#### post
 
-#### post ####
+#### head
 
-#### head ####
+#### put
 
-#### put ####
+#### delete
 
-#### delete ####
+#### trace
 
-#### trace ####
+#### options
 
-#### options ####
-
-#### patch ####
+#### patch
